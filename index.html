@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: speeds up loading by connecting early -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter typeface (weights 400–700) used across the page -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Project styles — layout, cards, buttons (see styles.css) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Dev label: identifies this as the static HTML demo (not React) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing row: holds all plan cards side by side -->
     <div class="cards-container">
+
+        <!-- Card: Hobby plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary CTA — outlined-style button -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +82,43 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary CTA — filled dark button -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card: Enterprise plan -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Organization-wide billing
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SAML / SSO
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom contracts
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary CTA — contact sales -->
+            <button class="download-button secondary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>
